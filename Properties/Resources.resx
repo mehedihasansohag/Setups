@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Msg_TargetPathTitile" xml:space="preserve">
+    <value>目标位置: </value>
+  </data>
+  <data name="Err_PackageDamaged" xml:space="preserve">
+    <value>安装包解压失败，可能已损坏。</value>
+  </data>
+  <data name="Msg_SelectedConfigAndStartInstall_NK300" xml:space="preserve">
+    <value>选择目标配置，然后单击&lt;确认&gt;，&lt;Enter&gt;或&lt;F7&gt; 继续安装</value>
+  </data>
+  <data name="Btn_Previous" xml:space="preserve">
+    <value>上一步(_P)</value>
+  </data>
+  <data name="Err_FileNameError" xml:space="preserve">
+    <value>需要创建的文件名不合法.</value>
+  </data>
+  <data name="Msg_SelectedOtherTaskAndNext" xml:space="preserve">
+    <value>选择安装 ${PN} 时希望安装程序来执行的其他任务，然后单击"下一步"。</value>
+  </data>
+  <data name="Err_DiskSpaceNotEnough" xml:space="preserve">
+    <value>{0} 盘剩余空间不足，不能完成安装。请先清理磁盘空间再安装，需要空间: {1}，磁盘可用空间: {2}。</value>
+  </data>
+  <data name="tbx_LocalMachine" xml:space="preserve">
+    <value>本地机床型号: </value>
+  </data>
+  <data name="Msg_CloseProcess" xml:space="preserve">
+    <value>请关闭以下进程再进行安装: </value>
+  </data>
+  <data name="Msg_NcStudioRestoring" xml:space="preserve">
+    <value>正在计算机上还原 ${PN}...</value>
+  </data>
+  <data name="Msg_StartupSelfEveryTime" xml:space="preserve">
+    <value>开机自启动，每次启动计算机时都自动启动软件。</value>
+  </data>
+  <data name="Err_FileUsed" xml:space="preserve">
+    <value>删除{0}文件夹失败！可能原因: 此文件夹中有文本或目录被占用，请关闭再安装！</value>
+  </data>
+  <data name="Btn_Cancel_NK300" xml:space="preserve">
+    <value>取消(F8)</value>
+  </data>
+  <data name="Msg_CheckTransformParameter" xml:space="preserve">
+    <value>参数迁移检查...</value>
+  </data>
+  <data name="Msg_ManufacturerParameterProc" xml:space="preserve">
+    <value>迁移参数...</value>
+  </data>
+  <data name="Err_DirectoryOpened" xml:space="preserve">
+    <value>删除{0}文件夹失败！可能原因: 此文件夹处于打开状态，请关闭文件夹再安装！</value>
+  </data>
+  <data name="Btn_No" xml:space="preserve">
+    <value>否</value>
+  </data>
+  <data name="Msg_CheckDirverProcessStatus" xml:space="preserve">
+    <value>检查驱动状态开始...</value>
+  </data>
+  <data name="Msg_FinishOtherTask" xml:space="preserve">
+    <value>正在完成其他任务...</value>
+  </data>
+  <data name="Err_RestoreException" xml:space="preserve">
+    <value>很抱歉还原过程中出现异常，还原失败。</value>
+  </data>
+  <data name="Btn_Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="Msg_SelectedConfigAndNext_NK300" xml:space="preserve">
+    <value>选择目标配置，然后单击&lt;确认&gt;，&lt;Enter&gt;或&lt;F7&gt;。</value>
+  </data>
+  <data name="Btn_Finish_NK300" xml:space="preserve">
+    <value>完成(F7)</value>
+  </data>
+  <data name="Msg_ReadMachine" xml:space="preserve">
+    <value>正在读取机型...</value>
+  </data>
+  <data name="Msg_SelectedParamMigration" xml:space="preserve">
+    <value>选择安装 ${PN} 时本地参数操作的方式，然后点击"Enter"继续安装。</value>
+  </data>
+  <data name="Msg_FinishWelcome" xml:space="preserve">
+    <value>完成 ${PN} 安装向导</value>
+  </data>
+  <data name="Err_UnauthorizedAccessException" xml:space="preserve">
+    <value>您没有操作{0}文件夹的权限！</value>
+  </data>
+  <data name="Msg_RemoteSupport" xml:space="preserve">
+    <value>远程协助</value>
+  </data>
+  <data name="Msg_StartupSelf" xml:space="preserve">
+    <value>开机自启动...</value>
+  </data>
+  <data name="Msg_UpdatingDriver" xml:space="preserve">
+    <value>正在自动更新驱动...</value>
+  </data>
+  <data name="Btn_Finish" xml:space="preserve">
+    <value>完成</value>
+  </data>
+  <data name="Err_InstallException" xml:space="preserve">
+    <value>很抱歉安装过程中出现异常不能进行安装。</value>
+  </data>
+  <data name="Btn_Yes" xml:space="preserve">
+    <value>是</value>
+  </data>
+  <data name="Err_HasStartedOne" xml:space="preserve">
+    <value>当前有程序正在安装，无法继续安装。</value>
+  </data>
+  <data name="Msg_MachineList" xml:space="preserve">
+    <value>机型列表: </value>
+  </data>
+  <data name="Msg_UserParameter" xml:space="preserve">
+    <value>保留本地用户设置</value>
+  </data>
+  <data name="Msg_SelectedMachineAndStartInstall_NK300" xml:space="preserve">
+    <value>选择目标机型，然后单击&lt;确认&gt;，&lt;Enter&gt;或&lt;F7&gt; 继续安装</value>
+  </data>
+  <data name="Msg_SelectedConfigProc" xml:space="preserve">
+    <value>选择配置...</value>
+  </data>
+  <data name="Err_SetupException" xml:space="preserve">
+    <value>安装过程中出现异常: </value>
+  </data>
+  <data name="Msg_InstallDriver" xml:space="preserve">
+    <value>安装驱动</value>
+  </data>
+  <data name="Btn_Clear" xml:space="preserve">
+    <value>清理</value>
+  </data>
+  <data name="Err_ConfigNotExist" xml:space="preserve">
+    <value>{0} 配置文件不存在！</value>
+  </data>
+  <data name="Msg_InstallFailed" xml:space="preserve">
+    <value>安装失败</value>
+  </data>
+  <data name="Msg_InstallFinish" xml:space="preserve">
+    <value>已在计算机上安装 ${PN}，单击"完成"可退出安装程序。
+
+为保证硬件的正常使用，系统休眠功能已被禁用。</value>
+  </data>
+  <data name="Msg_FreshIntallationMsg" xml:space="preserve">
+    <value>全新安装。</value>
+  </data>
+  <data name="Msg_SelectedParameterTaskAndNext" xml:space="preserve">
+    <value>选择安装 ${PN} 时本地参数操作的方式，然后单击"下一步"。</value>
+  </data>
+  <data name="Msg_SelectedMachineAndNext_NK300" xml:space="preserve">
+    <value>选择目标机型，然后单击&lt;确认&gt;，&lt;Enter&gt;或&lt;F7&gt;。</value>
+  </data>
+  <data name="Msg_CustConfigPage" xml:space="preserve">
+    <value>自定义页面</value>
+  </data>
+  <data name="Msg_UncompressDataProc" xml:space="preserve">
+    <value>解压数据...</value>
+  </data>
+  <data name="Msg_SetupOldParamWillClear" xml:space="preserve">
+    <value>即将清理{0}、{1}文件夹内的文件，是否继续？</value>
+  </data>
+  <data name="Msg_SelectedMachineAndNext" xml:space="preserve">
+    <value>选择目标机型，然后单击"下一步"。</value>
+  </data>
+  <data name="Msg_SelectedInstallConfig" xml:space="preserve">
+    <value>选择需要安装的配置。</value>
+  </data>
+  <data name="Err_DriveNotExist" xml:space="preserve">
+    <value>路径 {0} 不存在！</value>
+  </data>
+  <data name="Msg_EnsureInstalling" xml:space="preserve">
+    <value>安装程序期间会删除安装目录中部分文件，请检查文件是否有效保存。点击“确定”继续安装，点击“取消”退出安装。</value>
+  </data>
+  <data name="War_NotFound" xml:space="preserve">
+    <value>无法识别本地机床型号！是否继续安装？</value>
+  </data>
+  <data name="Btn_Continue" xml:space="preserve">
+    <value>继续</value>
+  </data>
+  <data name="Msg_Welcome" xml:space="preserve">
+    <value>欢迎使用 ${PN} 安装向导</value>
+  </data>
+  <data name="Msg_EnsureCustConfig" xml:space="preserve">
+    <value>是否确认选择 "{0}" ？</value>
+  </data>
+  <data name="Msg_SetupErrSoftwareNotExist" xml:space="preserve">
+    <value>安装包错误，软件包不存在</value>
+  </data>
+  <data name="Msg_InstallRemote" xml:space="preserve">
+    <value>安装远程服务...</value>
+  </data>
+  <data name="Msg_SureOnlyTranformParameter" xml:space="preserve">
+    <value>是否仅{0}？</value>
+  </data>
+  <data name="Msg_FreshIntallation" xml:space="preserve">
+    <value>全新安装</value>
+  </data>
+  <data name="Msg_InstallNcStudio" xml:space="preserve">
+    <value>这将在计算机上安装 ${PN}。
+
+建议关闭所有应用程序再继续。
+
+单击"下一步"以继续，或单击"取消"以退出安装程序。</value>
+  </data>
+  <data name="Msg_SelectedMachineProc" xml:space="preserve">
+    <value>选择机型...</value>
+  </data>
+  <data name="Msg_Warning" xml:space="preserve">
+    <value>警告</value>
+  </data>
+  <data name="Msg_ContinueInstall" xml:space="preserve">
+    <value>单击"下一步"以继续安装，单击"上一步"查看或更改设置。</value>
+  </data>
+  <data name="Msg_UncompressData" xml:space="preserve">
+    <value>解压数据</value>
+  </data>
+  <data name="Msg_RestoreConfigFile" xml:space="preserve">
+    <value>还原配置文件...</value>
+  </data>
+  <data name="Msg_Browse" xml:space="preserve">
+    <value>浏览...</value>
+  </data>
+  <data name="Msg_SelectedMachineAndStartInstall" xml:space="preserve">
+    <value>选择目标机型，然后点击"Enter"继续安装。</value>
+  </data>
+  <data name="Err_SetupNotContainExe" xml:space="preserve">
+    <value>安装包中不包含exe文件（{0}）</value>
+  </data>
+  <data name="Msg_Restoring" xml:space="preserve">
+    <value>正在还原</value>
+  </data>
+  <data name="Msg_PreInstallGetReady" xml:space="preserve">
+    <value>安装程序现已准备好在计算机上安装 ${PN}。</value>
+  </data>
+  <data name="Msg_Unrecognized" xml:space="preserve">
+    <value>无法识别</value>
+  </data>
+  <data name="Msg_NcStudioInstalled" xml:space="preserve">
+    <value>计算机上安装 ${PN} 完成</value>
+  </data>
+  <data name="Msg_SelectedParameterTaskAndNext_NK300" xml:space="preserve">
+    <value>选择安装 ${PN} 时本地参数操作的方式，然后点击&lt;确认&gt;、&lt;Enter&gt; 或 &lt;F7&gt;。</value>
+  </data>
+  <data name="Msg_Others" xml:space="preserve">
+    <value>其他: </value>
+  </data>
+  <data name="Msg_OtherTask" xml:space="preserve">
+    <value>其他任务: </value>
+  </data>
+  <data name="Msg_SelfStartup" xml:space="preserve">
+    <value>独占启动 (不启动桌面，只启动软件)</value>
+  </data>
+  <data name="Msg_SelectedMachine" xml:space="preserve">
+    <value>选择机型</value>
+  </data>
+  <data name="Msg_CustSelectedConfigAndNext" xml:space="preserve">
+    <value>选择相应配置，然后单击"下一步"。</value>
+  </data>
+  <data name="Msg_SetupWillComplete" xml:space="preserve">
+    <value>即将完成安装...</value>
+  </data>
+  <data name="Msg_RestoreCheckDriverStatus" xml:space="preserve">
+    <value>还原文件，检查驱动安装状态...</value>
+  </data>
+  <data name="Msg_PrepareReady" xml:space="preserve">
+    <value>安装准备就绪</value>
+  </data>
+  <data name="Err_UnknowError" xml:space="preserve">
+    <value>未知的错误: {0}。</value>
+  </data>
+  <data name="Err_SetupInitFailed" xml:space="preserve">
+    <value>安装程序初始化异常！</value>
+  </data>
+  <data name="Msg_CheckProcessInfo" xml:space="preserve">
+    <value>以下应用程序使用的文件在安装过程中需要更新，请关闭这些应用程序。</value>
+  </data>
+  <data name="Msg_ConfirmInstall" xml:space="preserve">
+    <value>确认安装...</value>
+  </data>
+  <data name="Msg_CreateDesktopShortcutMsg" xml:space="preserve">
+    <value>创建桌面快捷方式。</value>
+  </data>
+  <data name="Err_ConfigFileException" xml:space="preserve">
+    <value>配置文件内容异常。</value>
+  </data>
+  <data name="Err_CheckFileUsed" xml:space="preserve">
+    <value>{0}文件夹中有文本或目录被占用，请关闭再安装！</value>
+  </data>
+  <data name="Msg_StartWithDesktop" xml:space="preserve">
+    <value>正常启动 (先启动桌面，再启动软件)</value>
+  </data>
+  <data name="Msg_NcStudioInstalling" xml:space="preserve">
+    <value>正在计算机上安装 ${PN}...</value>
+  </data>
+  <data name="Msg_SetupWillStart" xml:space="preserve">
+    <value>即将开始安装...</value>
+  </data>
+  <data name="Msg_RestoreSetupFile" xml:space="preserve">
+    <value>还原安装文件...</value>
+  </data>
+  <data name="Msg_ManufacturerParameterMsg" xml:space="preserve">
+    <value>保留本地厂商设置。</value>
+  </data>
+  <data name="Msg_CheckEnvironmentProc" xml:space="preserve">
+    <value>正在检查安装环境...</value>
+  </data>
+  <data name="Msg_InstallingProc" xml:space="preserve">
+    <value>正在安装...</value>
+  </data>
+  <data name="Msg_StartupSelfWithoutDesktop" xml:space="preserve">
+    <value>开机自启动，不启动桌面...</value>
+  </data>
+  <data name="Msg_StartupSelfWithDesktop" xml:space="preserve">
+    <value>开机自启动，启动桌面...</value>
+  </data>
+  <data name="Msg_FinishingSetup" xml:space="preserve">
+    <value>正在结束安装...</value>
+  </data>
+  <data name="Msg_SelectedInstallMachine" xml:space="preserve">
+    <value>选择需要安装的机型。</value>
+  </data>
+  <data name="Msg_RestoreSetupDriver" xml:space="preserve">
+    <value>还原安装驱动...</value>
+  </data>
+  <data name="Msg_CheckNcStudioProcess" xml:space="preserve">
+    <value>正在检查${PN}是否启动</value>
+  </data>
+  <data name="Msg_FinishedSetup" xml:space="preserve">
+    <value>安装完成</value>
+  </data>
+  <data name="War_ConfigRisk" xml:space="preserve">
+    <value>您的配置文件（ {0}、{1} ）可能存在风险，请检查并清理不可用文件，或使用 NcConfig 进行参数备份后取消选择&lt;保留本地用户设置、保留本地厂商设置&gt;。
+继续安装可能出现软件无法正常启动或本地数据不正确的问题，是否继续安装？</value>
+  </data>
+  <data name="Err_InstallDriverFailed" xml:space="preserve">
+    <value>驱动更新失败，请手动更新驱动！</value>
+  </data>
+  <data name="Msg_RestoreFinish" xml:space="preserve">
+    <value>还原完成...</value>
+  </data>
+  <data name="Msg_RestoreFailed" xml:space="preserve">
+    <value>还原失败</value>
+  </data>
+  <data name="Err_MemoryNotEnoughOrPackageDamaged" xml:space="preserve">
+    <value>{0}盘存储空间不足或安装包已损坏。</value>
+  </data>
+  <data name="Err_CheckDotnetEnvironment" xml:space="preserve">
+    <value>请先安装.NET Framework 4.5及以上版本。</value>
+  </data>
+  <data name="Err_ReservedManufacturerFailed" xml:space="preserve">
+    <value>保留本地厂商设置失败！</value>
+  </data>
+  <data name="Msg_SelectedConfig" xml:space="preserve">
+    <value>选择配置</value>
+  </data>
+  <data name="Msg_IsClose" xml:space="preserve">
+    <value>现在关闭软件会导致软件安装不完整，是否关闭？</value>
+  </data>
+  <data name="Msg_Transform" xml:space="preserve">
+    <value>参数迁移</value>
+  </data>
+  <data name="Msg_ManufacturerParameter" xml:space="preserve">
+    <value>保留本地厂商设置</value>
+  </data>
+  <data name="Msg_File_Copy" xml:space="preserve">
+    <value>正在复制：</value>
+  </data>
+  <data name="War_MachineMisMatch" xml:space="preserve">
+    <value>警告: 机床型号不匹配！软件安装后可能存在参数错误，请慎重。</value>
+  </data>
+  <data name="Msg_CopyToSetupPath" xml:space="preserve">
+    <value>复制软件到安装目录...</value>
+  </data>
+  <data name="Err_ReservedUserFailed" xml:space="preserve">
+    <value>保留本地用户设置失败！</value>
+  </data>
+  <data name="Msg_RestoreFile" xml:space="preserve">
+    <value>还原文件</value>
+  </data>
+  <data name="Msg_SetupConfiguration" xml:space="preserve">
+    <value>安装配置: </value>
+  </data>
+  <data name="Err_CreateFileFailed" xml:space="preserve">
+    <value> 文件构建失败: </value>
+  </data>
+  <data name="Msg_SelectedConfigAndStartInstall" xml:space="preserve">
+    <value>选择目标配置，然后点击"Enter"继续安装。</value>
+  </data>
+  <data name="Msg_SetupMachine" xml:space="preserve">
+    <value>安装机型: </value>
+  </data>
+  <data name="Msg_InstallNcCloud" xml:space="preserve">
+    <value>安装维宏云</value>
+  </data>
+  <data name="Msg_CustSelectedConfigAndNextNK300" xml:space="preserve">
+    <value>选择相应配置，然后单击&lt;确认&gt;，&lt;Enter&gt;或&lt;F7&gt;。</value>
+  </data>
+  <data name="Msg_InstallRemoteProc" xml:space="preserve">
+    <value>安装远程服务</value>
+  </data>
+  <data name="Msg_RestoreReason" xml:space="preserve">
+    <value>还原原因：</value>
+  </data>
+  <data name="Msg_TargetPath" xml:space="preserve">
+    <value>目标位置</value>
+  </data>
+  <data name="Msg_NeedMethod" xml:space="preserve">
+    <value>应该执行哪种操作方式。</value>
+  </data>
+  <data name="Msg_ConfigList" xml:space="preserve">
+    <value>配置列表: </value>
+  </data>
+  <data name="Err_UnknowError_Retore" xml:space="preserve">
+    <value>未知错误.</value>
+  </data>
+  <data name="tbx_TargetMachine" xml:space="preserve">
+    <value>安装机床型号: </value>
+  </data>
+  <data name="Msg_ContinueNext" xml:space="preserve">
+    <value>若要继续，单击"下一步"。</value>
+  </data>
+  <data name="Err_MemoryNotEnough" xml:space="preserve">
+    <value>{0}盘存储空间不足。</value>
+  </data>
+  <data name="Msg_StartSetup" xml:space="preserve">
+    <value>安装开始...</value>
+  </data>
+  <data name="Msg_TransformData" xml:space="preserve">
+    <value>正在迁移数据...</value>
+  </data>
+  <data name="Msg_ProcessExitCode" xml:space="preserve">
+    <value>安装程序执行 {0} 失败，退出码: {1}</value>
+  </data>
+  <data name="Msg_ReadConfig" xml:space="preserve">
+    <value>正在读取配置...</value>
+  </data>
+  <data name="Msg_CheckEnvironment" xml:space="preserve">
+    <value>正在检查安装环境</value>
+  </data>
+  <data name="Msg_EnsureMachine" xml:space="preserve">
+    <value>是否确认安装 "{0}" 机型？</value>
+  </data>
+  <data name="Msg_SetupTitle" xml:space="preserve">
+    <value>安装程序 - ${PN}</value>
+  </data>
+  <data name="Msg_CreateDesktopShortcut" xml:space="preserve">
+    <value>创建桌面快捷方式</value>
+  </data>
+  <data name="War_MachineNotFound" xml:space="preserve">
+    <value>警告: 无法获取本地机床型号！软件安装后可能存在参数错误，请慎重。</value>
+  </data>
+  <data name="Msg_Installing" xml:space="preserve">
+    <value>正在安装</value>
+  </data>
+  <data name="Msg_SelectedParamMigration_NK300" xml:space="preserve">
+    <value>选择安装 ${PN} 时本地参数操作的方式，然后点击&lt;确认&gt;，&lt;Enter&gt; 或 &lt;F7&gt;继续安装。</value>
+  </data>
+  <data name="Err_NotContainExeFile" xml:space="preserve">
+    <value>软件中不包含exe文件（{0}）</value>
+  </data>
+  <data name="Msg_UserParameterMsg" xml:space="preserve">
+    <value>保留本地用户设置。</value>
+  </data>
+  <data name="Btn_Exit" xml:space="preserve">
+    <value>退出</value>
+  </data>
+  <data name="Btn_Next" xml:space="preserve">
+    <value>下一步(_N)</value>
+  </data>
+  <data name="Err_PathError" xml:space="preserve">
+    <value>需要创建的路径不合法.</value>
+  </data>
+  <data name="Msg_EnsureConfig" xml:space="preserve">
+    <value>是否确认安装 "{0}" 配置？</value>
+  </data>
+  <data name="Msg_NeedExecution" xml:space="preserve">
+    <value>应该执行哪些其他任务。</value>
+  </data>
+  <data name="Msg_SetupWarning" xml:space="preserve">
+    <value>安装警告</value>
+  </data>
+  <data name="Msg_SelectedOtherTask" xml:space="preserve">
+    <value>选择其他任务</value>
+  </data>
+  <data name="Msg_SureNotTranformParameter" xml:space="preserve">
+    <value>是否都不保留本地厂商设置、本地用户设置？</value>
+  </data>
+  <data name="Msg_CheckNcStudio" xml:space="preserve">
+    <value>检查${PN}是否关闭...</value>
+  </data>
+  <data name="Msg_ExecuteTransform" xml:space="preserve">
+    <value>执行参数迁移</value>
+  </data>
+  <data name="Msg_CopyFiles" xml:space="preserve">
+    <value>拷贝安装文件</value>
+  </data>
+  <data name="War_MisMatch" xml:space="preserve">
+    <value>机床型号不匹配！是否继续安装？</value>
+  </data>
+  <data name="Msg_InstallPath" xml:space="preserve">
+    <value>${PN}安装的路径。</value>
+  </data>
+  <data name="Msg_ProcessExist" xml:space="preserve">
+    <value>检测到加工软件正在运行，不允许安装软件，请关闭加工软件后重试。</value>
+  </data>
+  <data name="Msg_ProcessError" xml:space="preserve">
+    <value>执行进程{0}异常,详情: {1}</value>
+  </data>
+  <data name="Msg_OnlyReserved" xml:space="preserve">
+    <value>只保留本地Machine参数</value>
+  </data>
+  <data name="Msg_Copyright" xml:space="preserve">
+    <value>© 2016-2021 上海维宏电子科技股份有限公司，版权所有</value>
+  </data>
+  <data name="Msg_SelectedParamTask" xml:space="preserve">
+    <value>选择本地参数操作方式</value>
+  </data>
+  <data name="Msg_SureTranformParameter" xml:space="preserve">
+    <value>是否{0}？</value>
+  </data>
+  <data name="Msg_IsTransform" xml:space="preserve">
+    <value>是否允许参数迁移？ 
+是：将保留本地参数。
+否：不保留。</value>
+  </data>
+  <data name="Msg_CloseBackgroundProcesses" xml:space="preserve">
+    <value>删除后台进程...</value>
+  </data>
+  <data name="Err_InstallPathIsNull" xml:space="preserve">
+    <value>配置文件异常: 安装路径为空！</value>
+  </data>
+  <data name="Msg_CheckRestoreEnvironment" xml:space="preserve">
+    <value>检查还原环境...</value>
+  </data>
+  <data name="Msg_SetupProgramToDirectory" xml:space="preserve">
+    <value>安装程序会将 ${PN} 安装到以下文件夹。</value>
+  </data>
+  <data name="Msg_CreateShortcut" xml:space="preserve">
+    <value>创建快捷方式...</value>
+  </data>
+  <data name="Msg_SelectedConfigAndNext" xml:space="preserve">
+    <value>选择目标配置，然后单击"下一步"。</value>
+  </data>
+  <data name="Msg_PrepareInstall" xml:space="preserve">
+    <value>正在准备安装...</value>
+  </data>
+  <data name="Btn_OK_NK300" xml:space="preserve">
+    <value>确定(F7)</value>
+  </data>
+  <data name="Msg_InstallNcCloudProc" xml:space="preserve">
+    <value>安装维宏云...</value>
+  </data>
+</root>

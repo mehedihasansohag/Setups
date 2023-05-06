@@ -1,0 +1,19 @@
+<UserControl x:Class="Setup.FinsihPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:Setup"
+             xmlns:props="clr-namespace:Setup.Properties"
+             DataContext="{x:Static local:InstallContext.Instance}" FontSize="15" FontFamily="MicroSoft YaHei">
+  <StackPanel Orientation="Vertical">
+    <TextBlock Text="{x:Static props:Resources.Err_InstallDriverFailed}" Foreground="Red"
+               TextWrapping="WrapWithOverflow" Visibility="{Binding DirverFailVisibilty}"/>
+    <TextBlock Text="{x:Static props:Resources.Err_ReservedManufacturerFailed}" Foreground="Red"
+               TextWrapping="WrapWithOverflow" Visibility="{Binding ReservedManufacturerFailVisibility}"/>
+    <TextBlock Text="{x:Static props:Resources.Err_ReservedUserFailed}" Foreground="Red"
+               TextWrapping="WrapWithOverflow" Visibility="{Binding ReservedUserFailVisibility}"/>
+    <TextBlock Foreground="Red" TextWrapping="WrapWithOverflow" Text="{Binding ThirdPartyFailedMsg}"
+               Visibility="{Binding IsThirdPartyFailedMsgVisibility}"/>
+  </StackPanel>
+</UserControl>

@@ -1,0 +1,5 @@
+﻿[*.cs]
+
+# IDE0021: Use block body for constructors
+csharp_style_expression_bodied_constructors = when_on_single_line
+csharp_using_directive_placement=outside_namespace:suggestion

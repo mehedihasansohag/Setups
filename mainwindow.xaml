@@ -1,0 +1,107 @@
+<Window x:Class="Setup.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:Setup"
+        xmlns:props="clr-namespace:Setup.Properties"
+        WindowStartupLocation="CenterScreen" ResizeMode="NoResize" FontSize="15"
+        FontFamily="MicroSoft YaHei" Height="410" Width="610" Title="{local:Localize Msg_SetupTitle}">
+  <FrameworkElement.DataContext>
+    <local:InstallContext/>
+  </FrameworkElement.DataContext>
+  <FrameworkElement.Resources>
+    <local:Wizard x:Key="wizard" Next="Wizard_Next" Previous="Wizard_Previous" FinishButtonClosesWindow="true"
+                  CanHelp="false" NextButtonContent="{x:Static props:Resources.Btn_Next}"
+                  BackButtonContent="{x:Static props:Resources.Btn_Previous}"
+                  CancelButtonContent="{x:Static props:Resources.Btn_Cancel}"
+                  FinishButtonContent="{x:Static props:Resources.Btn_Finish}">
+      <local:WizardPage x:Name="Welcome" Loaded="WizardPage_Loaded" Title="{local:Localize Msg_Welcome}"
+                        Description="{local:Localize Msg_InstallNcStudio}">
+        <ContentControl.Content>
+          <local:WelcomePage/>
+        </ContentControl.Content>
+      </local:WizardPage>
+      <local:WizardPage x:Name="SelectConfig" Loaded="WizardPage_Loaded" PageType="Interior"
+                        Title="{x:Static props:Resources.Msg_SelectedConfig}"
+                        Description="{x:Static props:Resources.Msg_SelectedInstallConfig}">
+        <ContentControl.Content>
+          <local:SelectedConfigPage/>
+        </ContentControl.Content>
+      </local:WizardPage>
+      <local:WizardPage x:Name="Machine" Loaded="WizardPage_Loaded" PageType="Interior"
+                        Title="{x:Static props:Resources.Msg_SelectedMachine}"
+                        Description="{x:Static props:Resources.Msg_SelectedInstallConfig}">
+        <ContentControl.Content>
+          <local:SelectedMachinePage/>
+        </ContentControl.Content>
+      </local:WizardPage>
+      <local:WizardPage x:Name="Parameter" Loaded="WizardPage_Loaded" PageType="Interior"
+                        Title="{x:Static props:Resources.Msg_SelectedParamTask}"
+                        Description="{x:Static props:Resources.Msg_NeedMethod}">
+        <ContentControl.Content>
+          <local:SelectedParamMigration/>
+        </ContentControl.Content>
+      </local:WizardPage>
+      <local:WizardPage x:Name="CustConfigPage" Loaded="WizardPage_Loaded" PageType="Interior" CustPage="True">
+        <ContentControl.Content>
+          <local:CustSelectedConfigPage/>
+        </ContentControl.Content>
+      </local:WizardPage>
+      <local:WizardPage Loaded="WizardPage_Loaded" PageType="Interior"
+                        Title="{x:Static props:Resources.Msg_SelectedOtherTask}"
+                        Description="{x:Static props:Resources.Msg_NeedExecution}">
+        <ContentControl.Content>
+          <local:SelecedOtherTaskPage/>
+        </ContentControl.Content>
+      </local:WizardPage>
+      <local:WizardPage Loaded="WizardPage_Loaded" PageType="Interior" Title="{x:Static props:Resources.Msg_PrepareReady}"
+                        Description="{local:Localize Msg_PreInstallGetReady}">
+        <ContentControl.Content>
+          <local:PreInstallPage/>
+        </ContentControl.Content>
+      </local:WizardPage>
+      <local:WizardPage Loaded="WizardPage_Loaded" PageType="Interior" Title="{x:Static props:Resources.Msg_PrepareReady}"
+                        Description="{local:Localize Msg_PreInstallGetReady}">
+        <ContentControl.Content>
+          <local:CheckProcessPage1/>
+        </ContentControl.Content>
+      </local:WizardPage>
+      <local:WizardPage x:Name="Install" Loaded="WizardPage_Loaded" PageType="Interior" CanCancel="False"
+                        Title="{x:Static props:Resources.Msg_Installing}" CanSelectPreviousPage="False"
+                        CanSelectNextPage="False" Description="{local:Localize Msg_NcStudioInstalling}">
+        <ContentControl.Content>
+          <local:InstallPage/>
+        </ContentControl.Content>
+      </local:WizardPage>
+      <local:WizardPage x:Name="FinishPage" Loaded="WizardPage_Loaded" CanFinish="True" CanSelectPreviousPage="False"
+                        CanSelectNextPage="False" CanCancel="False" Title="{local:Localize Msg_FinishWelcome}"
+                        Description="{local:Localize Msg_InstallFinish}">
+        <ContentControl.Content>
+          <local:FinsihPage/>
+        </ContentControl.Content>
+      </local:WizardPage>
+      <local:WizardPage x:Name="ErrorPage" Loaded="WizardPage_Loaded" Title="{x:Static props:Resources.Msg_InstallFailed}"
+                        CanSelectPreviousPage="False" CanSelectNextPage="False" CanFinish="True" CanCancel="False"
+                        Description="{x:Static props:Resources.Err_InstallException}">
+        <ContentControl.Content>
+          <local:InstallFailedPage/>
+        </ContentControl.Content>
+      </local:WizardPage>
+      <local:WizardPage x:Name="RestoreErrorPage" Loaded="WizardPage_Loaded"
+                        Title="{x:Static props:Resources.Msg_RestoreFailed}" CanSelectPreviousPage="False"
+                        CanSelectNextPage="False" CanFinish="True" CanCancel="False"
+                        Description="{x:Static props:Resources.Err_RestoreException}">
+        <ContentControl.Content>
+          <local:RestoreFailedPage/>
+        </ContentControl.Content>
+      </local:WizardPage>
+      <local:WizardPage x:Name="RestorePage" Loaded="WizardPage_Loaded" PageType="Interior"
+                        Title="{x:Static props:Resources.Msg_Restoring}" CanSelectPreviousPage="False"
+                        CanSelectNextPage="False" CanCancel="False" Description="{local:Localize Msg_NcStudioRestoring}">
+        <ContentControl.Content>
+          <local:InstallRestoreFilePage/>
+        </ContentControl.Content>
+      </local:WizardPage>
+    </local:Wizard>
+  </FrameworkElement.Resources>
+  <Grid/>
+</Window>

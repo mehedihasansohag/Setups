@@ -1,0 +1,19 @@
+<UserControl x:Class="Setup.InstallRestoreFilePage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:Setup"
+             DataContext="{x:Static local:InstallContext.Instance}" FontSize="15" FontFamily="MicroSoft YaHei">
+  <Grid>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="18"/>
+      <ColumnDefinition/>
+    </Grid.ColumnDefinitions>
+    <StackPanel Orientation="Vertical" Grid.Column="1">
+      <TextBlock Margin=" 0,5" Text="{Binding CurrentText}"/>
+      <TextBlock Margin="0,0,0,5" Text="{Binding SubCurrentText}"/>
+      <ProgressBar Height="25" IsIndeterminate="false" Value="{Binding ProgressValue}"/>
+    </StackPanel>
+  </Grid>
+</UserControl>

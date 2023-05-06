@@ -1,0 +1,31 @@
+<UserControl x:Class="Setup.SelecedOtherTaskPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:Setup"
+             xmlns:props="clr-namespace:Setup.Properties"
+             FontSize="15" FontFamily="MicroSoft YaHei" DataContext="{x:Static local:InstallContext.Instance}">
+  <Grid>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="18"/>
+      <ColumnDefinition/>
+    </Grid.ColumnDefinitions>
+    <StackPanel Orientation="Vertical" Grid.Column="1">
+      <TextBlock TextWrapping="WrapWithOverflow" Text="{local:Localize Msg_SelectedOtherTaskAndNext}"/>
+      <Rectangle Height="15"/>
+      <TextBlock Margin="0,3,0,13" Text="{x:Static props:Resources.Msg_Others}"/>
+      <CheckBox Content="{x:Static props:Resources.Msg_CreateDesktopShortcutMsg}" Visibility="Collapsed"
+                Padding="4,0,0,3" IsChecked="{Binding IsCreateShotCut}"/>
+      <CheckBox Name="chkAutoStart" Margin="0,1" Content="{x:Static props:Resources.Msg_StartupSelfEveryTime}"
+                Padding="4,0,0,3" IsChecked="{Binding IsAutoStart}"/>
+      <RadioButton Content="{x:Static props:Resources.Msg_StartWithDesktop}" Margin="18,0,0,0" Padding="4,0,0,3"
+                   IsChecked="{Binding IsAutoRestart}" IsEnabled="{Binding IsChecked, ElementName=chkAutoStart}"
+                   Visibility="{Binding AutoRestartVisibilty}"/>
+      <RadioButton Content="{x:Static props:Resources.Msg_SelfStartup}" Margin="18,0,0,0" Padding="4,0,0,3"
+                   IsChecked="{Binding IsAutoRestartNoDesktop}"
+                   IsEnabled="{Binding IsChecked, ElementName=chkAutoStart}"
+                   Visibility="{Binding AutoRestartVisibilty}"/>
+    </StackPanel>
+  </Grid>
+</UserControl>
